@@ -10,11 +10,12 @@ namespace NumberCheck {
 
 
 
+ static NumberChecker myNumber = new NumberChecker(minNumber, maxNumber);
+
+
     public static void Main()
     {
 
-
-      NumberChecker myNumber = new NumberChecker(minNumber, maxNumber);
       Console.WriteLine("Is your number higher or lower than " + myNumber.Result());
       string userInput = Console.ReadLine();
       bool check  = myNumber.IsCorrect(userInput);
@@ -26,6 +27,7 @@ namespace NumberCheck {
       {
           Main();
       }
+
 
     }
   }
